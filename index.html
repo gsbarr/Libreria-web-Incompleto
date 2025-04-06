@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LIBRERIA WEB</h1>
+
+        <div class="row">
+            <div class="input-field col s3">
+                <select>
+                <option value="" disabled selected>Elija su perfil</option>
+                <option value="1">Repositor</option>
+                <option value="2">Vendedor</option>
+                <option value="3">Cajero</option>
+                </select>
+            </div>  
+        </div>  
+    
+        <!-- Aca puedo agregar nuevos productos en Stock (perfil REPOSITOR)-->
+        <div class="row formu_nuevoProd">
+            <div class="input-field col s6">
+                <input placeholder="Producto" id="producto" type="text" class="validate">
+                <label for="producto">Nombre del producto</label>
+            </div>
+            <div class="input-field col s3">
+                <input placeholder="Stock" id="stock" type="text" class="validate">
+                <label for="stock">Stock</label>
+            </div>
+            <div class="col s3">
+                <br>
+                <a class="waves-effect waves-light btn">Cargar producto</a>
+            </div>
+            
+        </div>
+
+        <!-- Aca puedo agregar productos al carrito (Perfil VENDEDOR) -->
+        <div class="row formu_listaProd">
+            <div class="input-field col s6">
+                <input placeholder="Producto" id="producto" type="text"  value="Producto de ejemplo" disabled>
+                <label for="producto">Nombre del producto</label>
+            </div>
+            <div class="input-field col s3">
+                <input placeholder="Stock" id="stock" type="text" disabled value="567">
+                <label for="stock">Stock</label>
+            </div>
+            <div class="col s3">
+                <br>
+                <a class="waves-effect waves-light btn">Agregar 1 a carrito</a>
+            </div>
+            
+        </div>
+
+        <!-- Aca se muestran los productos que agrego al carrito (perfil VENDEDOR)-->
+        <div class="row formu_listaCarrito">
+            <div class="input-field col s6">
+                <input placeholder="Producto" id="producto" type="text"  value="Producto de ejemplo" disabled>
+                <label for="producto">Nombre del producto</label>
+            </div>
+            <div class="input-field col s3">
+                <input placeholder="Stock" id="stock" type="text" disabled value="567">
+                <label for="stock">Stock</label>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
+</body>
+</html>

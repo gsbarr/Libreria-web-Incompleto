@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+}
+
+.formu_nuevoProd{
+    background-color: blueviolet;
+}
+
+.formu_listaProd{
+    background-color: brown;
+}
+
+.formu_listaCarrito{
+    background-color: cadetblue;
+}
