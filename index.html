@@ -11,6 +11,7 @@
     <div class="container">
         <h1>LIBRERIA WEB</h1>
 
+  
         <div class="row">
             <div class="input-field col s3">
                 <select>
@@ -23,6 +24,7 @@
         </div>  
     
         <!-- Aca puedo agregar nuevos productos en Stock (perfil REPOSITOR)-->
+        <h6> Form cargar producto</h6>
         <div class="row formu_nuevoProd">
             <div class="input-field col s6">
                 <input placeholder="Producto" id="producto" type="text" class="validate">
@@ -34,12 +36,13 @@
             </div>
             <div class="col s3">
                 <br>
-                <a class="waves-effect waves-light btn">Cargar producto</a>
+                <a class="waves-effect waves-light btn" onclick="nuevoProd()">Cargar producto</a>
             </div>
             
         </div>
 
         <!-- Aca puedo agregar productos al carrito (Perfil VENDEDOR) -->
+        <h6> Productos disponibles </h6>
         <div class="row formu_listaProd">
             <div class="input-field col s6">
                 <input placeholder="Producto" id="producto" type="text"  value="Producto de ejemplo" disabled>
@@ -57,6 +60,7 @@
         </div>
 
         <!-- Aca se muestran los productos que agrego al carrito (perfil VENDEDOR)-->
+        <h6> Carrito </h6>
         <div class="row formu_listaCarrito">
             <div class="input-field col s6">
                 <input placeholder="Producto" id="producto" type="text"  value="Producto de ejemplo" disabled>
@@ -83,5 +87,7 @@
             $('select').formSelect();
         });
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
